@@ -1,10 +1,11 @@
 // swift-tools-version:5.5
 import PackageDescription
+
 let package = Package(
     name: "AccuraKYC",
     platforms: [.iOS(.v12)],
     products: [
-        .library(name: "AccuraKYC", targets: ["AccuraKYC"])
+        .library(name: "AccuraKYCWrapper", targets: ["AccuraKYCWrapper"])
     ],
     dependencies: [
         .package(url: "https://github.com/AFNetworking/AFNetworking", from: "4.0.1"),
@@ -12,10 +13,10 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "AccuraKYC",
+            name: "AccuraKYCWrapper",
             dependencies: [
-                "AccuraKYC", 
-                "AFNetworking", 
+                "AccuraKYC",
+                "AFNetworking",
                 "SVProgressHUD"
             ]
         ),
