@@ -3,16 +3,23 @@ import PackageDescription
 
 let package = Package(
     name: "AccuraKYC",
-    platforms: [
-        .iOS(.v12)
-    ],
+    platforms: [.iOS(.v12)],
     products: [
-        .library(
-            name: "AccuraKYC",
-            targets: ["AccuraKYC"]
-        )
+        .library(name: "AccuraKYCWrapper", targets: ["AccuraKYCWrapper"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/AFNetworking/AFNetworking", from: "4.0.1"),
+        .package(url: "https://github.com/SVProgressHUD/SVProgressHUD", from: "2.3.1"),
     ],
     targets: [
+        .target(
+            name: "AccuraKYCWrapper",
+            dependencies: [
+                "AccuraKYC",
+                "AFNetworking",
+                "SVProgressHUD"
+            ]
+        ),
         .binaryTarget(
             name: "AccuraKYC",
             url: "https://github.com/M7MD1315/KYC-SDK-iOS/releases/download/v1.0.0/AccuraOCR.xcframework.zip",
