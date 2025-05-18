@@ -11,6 +11,7 @@
 		A3CC7FB024A45E520046694A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CC7FAE24A45E520046694A /* Main.storyboard */; };
 		A3CC7FB224A45E530046694A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CC7FB124A45E530046694A /* Assets.xcassets */; };
 		A3CC7FB524A45E530046694A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CC7FB324A45E530046694A /* LaunchScreen.storyboard */; };
+		D933501D2DDA1AC700074214 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D933501C2DDA1ABF00074214 /* Placeholder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		A3CC7FB124A45E530046694A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3CC7FB424A45E530046694A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3CC7FB624A45E530046694A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D933501C2DDA1ABF00074214 /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		A3CC7FA724A45E520046694A /* accuraocrSDK */ = {
 			isa = PBXGroup;
 			children = (
+				D933501C2DDA1ABF00074214 /* Placeholder.swift */,
 				A3CC7FAE24A45E520046694A /* Main.storyboard */,
 				A3CC7FB124A45E530046694A /* Assets.xcassets */,
 				A3CC7FB324A45E530046694A /* LaunchScreen.storyboard */,
@@ -94,6 +97,7 @@
 				TargetAttributes = {
 					A3CC7FA424A45E520046694A = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1630;
 					};
 				};
 			};
@@ -133,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D933501D2DDA1AC700074214 /* Placeholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +281,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JA79VPTEAU;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -290,6 +296,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo.accuraocrSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JA79VPTEAU;
 				FRAMEWORK_SEARCH_PATHS = (
