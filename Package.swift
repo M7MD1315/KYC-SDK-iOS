@@ -10,6 +10,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/AFNetworking/AFNetworking", from: "4.0.1"),
         .package(url: "https://github.com/SVProgressHUD/SVProgressHUD", from: "2.3.1"),
+        .package(url: "https://github.com/google/promises", from: "2.4.0"),
     ],
     targets: [
         .target(
@@ -17,7 +18,8 @@ let package = Package(
             dependencies: [
                 "AccuraKYC",
                 "AFNetworking",
-                "SVProgressHUD"
+                "SVProgressHUD",
+                .product(name: "Promises", package: "promises")
             ]
         ),
         .binaryTarget(
